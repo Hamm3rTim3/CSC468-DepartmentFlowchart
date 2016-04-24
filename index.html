@@ -8,19 +8,7 @@
 <link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
 <script src="scripts/jquery.1.9.0.min.js"></script>
 <script src="scripts/jquery-mobilemenu.min.js"></script>
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
-<script src="scripts/ie/css3-mediaqueries.min.js"></script>
-<script src="scripts/ie/ie9.js"></script>
-<script src="scripts/ie/html5shiv.min.js"></script>
-<![endif]-->
-<!-- BEFORE USING THIS FRAMEWORK REMOVE THIS DEMO STYLING - ONLY USED TO EMPHASISE THE DIV CONTAINERS IN THE CONTENT AREA -->
-<style type="text/css">
-div.full_width{margin-top:20px;}
-div.full_width:first-child{margin-top:0;}
-div.full_width div{color:#666666; background-color:#DEDEDE;}
-</style>
-<!-- END DEMO STYLING -->
+
 </head>
 <body>
 <div class="wrapper row1">
@@ -35,13 +23,15 @@ div.full_width div{color:#666666; background-color:#DEDEDE;}
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
-      <li ><a href="http://www.mcs.sdsmt.edu/view.php?p=2500" onfocus="this.blur()">Get Involved</a></li>
+      <li><a href="http://www.mcs.sdsmt.edu/view.php?p=2500" onfocus="this.blur()">Get Involved</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=2600" onfocus="this.blur()">Submit It!</a>
       <li><a href="https://wa-sdsmt.prod.sdbor.edu/WebAdvisor/webadvisor" class="js-target" onfocus="this.blur()">Web Advisor</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=3700" onfocus="this.blur()">Policies</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4200" onfocus="this.blur()">Coding Standard</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4300" onfocus="this.blur()">Utilities</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4400" onfocus="this.blur()">References</a></li>
+      <li><a href="http://www.mcs.sdsmt.edu/view.php?p=5100" onfocus="this.blur()">Contact Us</a></li>
+      <li><a href="mailto:kyle.riley@sdsmt.edu" onfocus="this.blur()">Email</a>
     </ul>
   </nav>
 </div>
@@ -50,124 +40,25 @@ div.full_width div{color:#666666; background-color:#DEDEDE;}
   <div id="container">
     <!-- ################################################################################################ -->
     <div class="full_width clear">
-      <h2>Half Columns</h2>
-      <div class="one_half first">One Half</div>
-      <div class="one_half">One Half</div>
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-    <div class="full_width clear">
-      <h2>Third Columns</h2>
-      <div class="one_third first">One Third</div>
-      <div class="one_third">One Third</div>
-      <div class="one_third">One Third</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_third first">One Third</div>
-      <div class="two_third">Two Third</div>
-    </div>
-    <div class="full_width clear">
-      <div class="two_third first">Two Third</div>
-      <div class="one_third">One Third</div>
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-    <div class="full_width clear">
-      <h2>Quarter Columns</h2>
-      <div class="one_quarter first">One Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_quarter first">One Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-      <div class="two_quarter">Two Quarter</div>
-    </div>
-    <div class="full_width clear">
-      <div class="two_quarter first">Two Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_quarter first">One Quarter</div>
-      <div class="two_quarter">Two Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_quarter first">One Quarter</div>
-      <div class="three_quarter">Three Quarter</div>
-    </div>
-    <div class="full_width clear">
-      <div class="three_quarter first">Three Quarter</div>
-      <div class="one_quarter">One Quarter</div>
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-    <div class="full_width clear">
-      <h2>Fifth Columns</h2>
-      <div class="one_fifth first">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_fifth first">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="two_fifth">Two Fifth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_fifth first">One Fifth</div>
-      <div class="one_fifth">One Fifth</div>
-      <div class="three_fifth">Three Fifth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_fifth first">One Fifth</div>
-      <div class="four_fifth">Four Fifth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="two_fifth first">Two Fifth</div>
-      <div class="three_fifth">Three Fifth</div>
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-    <div class="full_width clear">
-      <h2>Sixth Columns</h2>
-      <div class="one_sixth first">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_sixth first">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="two_sixth">Two Sixth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_sixth first">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="three_sixth">Three Sixth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_sixth first">One Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="four_sixth">Four Sixth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="one_sixth first">One Sixth</div>
-      <div class="five_sixth">Five Sixth</div>
-    </div>
-    <div class="full_width clear">
-      <div class="two_sixth first">Two Sixth</div>
-      <div class="one_sixth">One Sixth</div>
-      <div class="three_sixth">Three Sixth</div>
+      <!--<h2>Half Columns</h2> -->
+      <div class="one_half first">
+	</p>
+          <img class="noborder" alt="McLaury Building - Department of Math and Comp Sci" src="http://www.mcs.sdsmt.edu/images/McLaury.jpg" width="225" height="160" />
+          <h2 class="normal" >Welcome to Mathematics and Computer Science @ SDSM&T</h2>
+          <p> We are in the process of moving all our materials to the main campus website. You can find the new department home at <a href="http://www.sdsmt.edu/MCS/">http://www.sdsmt.edu/MCS/</a>. 
+                      </p>
+          <p>
+            Our department offers a B.S. in Computer Science, a B.S. in Applied and Computational Mathematics, and a new M.S. in <a href="http://www.sdsmt.edu/CSR/">Computational Sciences and Robotics</a>. Our B.S. Computer Science degree is accredited by the Computing Accreditation Commission of ABET, <a href="http://www.abet.org">http://www.abet.org</a>.  
+          </p>
+	</div>
+      <div class="one_half">
+	  <h2>A Few Items Still on this Website</h2>
+          <p>
+            The code submission page 
+            has been redesigned to hopefully make it more user friendly and 
+            intuitive. The code submission page can now be found under <a href="http://www.mcs.sdsmt.edu/view.php?p=2600">"Submit It!</a>". The Alumni, resources, and policy pages on the left navigation menu are still complete with the information we have been maintaining. Please check out the new department home at <a href="http://www.sdsmt.edu/MCS/">http://www.sdsmt.edu/MCS/</a> to get the latest and greatest information. 
+          </p>
+	</div>
     </div>
     <!-- ################################################################################################ -->
   </div>
@@ -175,8 +66,7 @@ div.full_width div{color:#666666; background-color:#DEDEDE;}
 <!-- Footer -->
 <div class="wrapper row4">
   <footer id="footer" class="clear">
-    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">SDSM&T</a></p>
   </footer>
 </div>
 </body>
