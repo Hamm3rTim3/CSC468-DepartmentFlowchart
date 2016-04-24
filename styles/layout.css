@@ -52,12 +52,17 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .row3 a{color:#071D49; background-color:#FFFFFF;}
 .row4, .row4 a{color:#919191; background-color:#071D49;}
 
-.flowchart{
-	background-color:#d9d9d9; 
+.flowchart{ 
 	padding:10px 50px 10px 50px;
-	width:80%;
+	width:60%;
 	margin:auto;
 	display:block;
+}
+.flowchartOuter{
+	background: rgb(224, 224, 224) none repeat scroll 0% 0%;
+}
+.flowchartOuter element{
+	background: rgb(224, 224, 224) none repeat scroll 0% 0%;
 }
 
 /*----------------------------------------------Generalise-------------------------------------*/
