@@ -49,7 +49,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .row1, .row1 a{color:white; background-color:#071D49;}
 .row2{color:#919191; background-color:#B3A369;}
 .row3{color:#979797; background-color:#FFFFFF;}
-.row3 a{color:#FF9900; background-color:#FFFFFF;}
+.row3 a{color:#071D49; background-color:#FFFFFF;}
 .row4, .row4 a{color:#919191; background-color:#071D49;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
