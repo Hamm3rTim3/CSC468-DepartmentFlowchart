@@ -71,6 +71,9 @@
           
         }
       }
+      $course['name'] = "Course Not Found";
+      $course['number'] = "400";
+      return $course;
     }
 
     function printCourse( $toPrint )
@@ -81,7 +84,7 @@
             " - ( " . $toPrint['preFix'] . " " . $toPrint['number'] . " )" . 
             "</h2>";
       print "<p><b>Credits: &nbsp</b>" . $toPrint['credits'] . "</p>";
-      print "<p><b>Prerequisites: &nbsp</b>";
+      print "<p><b>Pre-Requisites: &nbsp</b>";
       if( count($toPrint['preReq']) == 0 )      
         print "none</p>";
       else
@@ -91,7 +94,7 @@
         print "</p>";
       }
 
-      print "<p><b>Corequisites: &nbsp</b>";
+      print "<p><b>Co-Requisites: &nbsp</b>";
       if( count($toPrint['coReq']) == 0 )
       {      
         print "none</p>";

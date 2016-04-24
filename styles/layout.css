@@ -53,7 +53,6 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .row4, .row4 a{color:#919191; background-color:#071D49;}
 
 .flowchart{ 
-	padding:10px 50px 10px 50px;
 	width:60%;
 	margin:auto;
 	display:block;
@@ -63,6 +62,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 }
 .flowchartOuter element{
 	background: rgb(224, 224, 224) none repeat scroll 0% 0%;
+	padding:10px 50px 10px 50px;
 }
 
 /*----------------------------------------------Generalise-------------------------------------*/
