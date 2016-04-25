@@ -1,12 +1,43 @@
+<!--*********************************************************************
+   Program: PA3-MCS Website
+   Authors: Even Hammer, Adam Lawson, Marcus Haberling
+   Class: CSC 468
+   Instructor: Dr. John Weiss
+   Date: 4/24/2016
+   Description: The purpose of this project was a redesign of the MCS
+	department page. We redesigned the homepage with links that 
+	currently take the user to the current links on the homepage, but
+	will eventually take the user to the updated pages once all pages
+	and code are put together. The particular feature that we redesigned
+	was the Flowchart link which can be found on the top bar of the 
+	main website. Clicking this link will take you to "flowchart.html"
+	where you will see the flowchart courses. Hovering over a
+	particular course will give the basic course information. Clicking
+	on the course will give you the full course information from the
+	course catalog.
+   Usage: Must be placed in a server folder to function.
+   Credit: We heavily modified a template that was found. The information
+	about the template is found below.
+	
+	Responsive Template Name: RS-MQF 960 V.2
+	File: Layout CSS
+	Author: OS Templates
+	Author URI: http://www.os-templates.com/
+	Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+ **********************************************************************-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 <title>MCS @ SDSM&T</title>
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Generic css layouts found here -->
 <link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
 <script src="scripts/jquery.1.9.0.min.js"></script>
+
+<!-- When viewed on small screens the menu bar changeds to a dropdown list -->
 <script src="scripts/jquery-mobilemenu.min.js"></script>
 
 </head>
@@ -19,7 +50,12 @@
     </div>
   </header>
 </div>
+
+
 <!-- ################################################################################################ -->
+<!-- This section defines our menubar along with the needed hyperlinks -->
+
+
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
@@ -30,28 +66,34 @@
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=3700" onfocus="this.blur()">Policies</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4200" onfocus="this.blur()">Coding Standard</a></li>
       <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4300" onfocus="this.blur()">Utilities</a></li>
-      <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4400" onfocus="this.blur()">References</a></li>
-     
+      <li><a href="http://www.mcs.sdsmt.edu/view.php?p=4400" onfocus="this.blur()">References</a></li>    
     </ul>
   </nav>
 </div>
-<!-- content -->
+
+
+<!-- ################################################################################################ -->
+<!-- This section hold our body text that was on the original csc website. -->
+<!-- Text found of the left side of the screen. -->
 <div class="wrapper row3">
   <div id="container">
-    <!-- ################################################################################################ -->
     <div class="full_width clear">
       <!--<h2>Half Columns</h2> -->
       <div class="one_half first">
 	</p>
+	  <!-- Picture of McLaury -->
           <img class="noborder" alt="McLaury Building - Department of Math and Comp Sci" src="http://www.mcs.sdsmt.edu/images/McLaury.jpg" width="225" height="160" />
           <h2 class="normal" >Welcome to Mathematics and Computer Science @ SDSM&T</h2>
           <p> We are in the process of moving all our materials to the main campus website. You can find the new department home at <a href="http://www.sdsmt.edu/MCS/">http://www.sdsmt.edu/MCS/</a>. 
-                      </p>
+          </p>
+
           <p>
             Our department offers a B.S. in Computer Science, a B.S. in Applied and Computational Mathematics, and a new M.S. in <a href="http://www.sdsmt.edu/CSR/">Computational Sciences and Robotics</a>. Our B.S. Computer Science degree is accredited by the Computing Accreditation Commission of ABET, <a href="http://www.abet.org">http://www.abet.org</a>.  
           </p>
+
+<!-- Text found of the right side of the screen -->
 	</div>
-      <div class="one_half">
+        <div class="one_half">
 	  <h2>A Few Items Still on this Website</h2>
           <p>
             The code submission page 
@@ -60,15 +102,17 @@
           </p>
 	</div>
     </div>
-    <!-- ################################################################################################ -->
   </div>
 </div>
+
+
+<!-- ################################################################################################ -->
 <!-- Footer -->
 <div class="wrapper row4">
   <footer id="footer" class="clear">
     <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">SDSM&T</a> <a href="http://www.mcs.sdsmt.edu/view.php?p=5100" onfocus="this.blur()"> - Contact Us - </a>
       <a href="mailto:kyle.riley@sdsmt.edu" onfocus="this.blur()">Email</a>
-</p>
+    </p>
   </footer>
 </div>
 </body>
