@@ -1,10 +1,20 @@
 /*
-Responsive Template Name: RS-MQF 960 V.2
-File: Media Queries CSS
-Author: OS Templates
-Author URI: http://www.os-templates.com/
-Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+Program: PA3-MCS Website
+Authors: Even Hammer, Adam Lawson, Marcus Haberling
+Class: CSC 468
+Instructor: Dr. John Weiss
+Date: 4/24/2016
+Description: This file controls how the site displays when viewed on
+	smaller screens.
+Template below was modified:
+
+	Responsive Template Name: RS-MQF 960 V.2
+	File: Layout CSS
+	Author: OS Templates
+	Author URI: http://www.os-templates.com/
+	Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
 */
+
 
 @-ms-viewport{width:device-width;} /* http://msdn.microsoft.com/en-gb/library/ie/hh869615%28v=vs.85%29.aspx */
 
@@ -12,17 +22,17 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 @media screen and (min-width:240px) and (max-width:360px) {
 	#header, #topnav, #container, #footer{max-width:95%; margin:0 auto;}
-	
+
 	#topnav ul{display:none;}
-	
-	.one_half, 
-	.one_third, .two_third, 
-	.one_quarter, .two_quarter, .three_quarter, 
-	.one_fifth, .two_fifth, .three_fifth, .four_fifth, 
+
+	.one_half,
+	.one_third, .two_third,
+	.one_quarter, .two_quarter, .three_quarter,
+	.one_fifth, .two_fifth, .three_fifth, .four_fifth,
 	.one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth{display:block; float:none; width:auto; margin:0 0 2% 0; padding:0;}
-	
+
 	#header #hgroup{display:block; width:100%; float:none; margin:0 0 15px 0; padding:0;}
-	
+
 	#header, #footer{text-align:center;}
 	#footer p{float:none; line-height:1.6em;}
 	#footer p:first-child{margin-bottom:8px;}
@@ -32,9 +42,9 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 @media screen and (min-width:361px) and (max-width:600px) {
 	#header, #topnav, #container, #footer{max-width:95%; margin:0 auto;}
-	
+
 	#topnav ul{display:none;}
-	
+
 	#footer p{float:none;}
 	#footer p:first-child{margin-bottom:8px;}
 }
