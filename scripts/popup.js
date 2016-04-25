@@ -69,7 +69,7 @@ function onMapResize(){
   [530,320,600,365],
   [625,0,695,50],
   [620,60,695,115],
-  [725,0,795,5],
+  [725,0,795,50],
   [720,60,800,115]]
   var imWidth = document.getElementById("flowdiagram").offsetWidth;
   var map = document.getElementById("flowchartmap");
