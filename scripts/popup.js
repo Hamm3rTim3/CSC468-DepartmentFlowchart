@@ -31,6 +31,10 @@ function changeData(data)
   console.log(data);
   return;
 }
+function customPopup(courseInfo){
+  document.getElementById('modalContent').innerHTML = courseInfo;
+  modal.style.display = 'block';
+}
 function onMapResize(){
   var firstCoords = [
   [0,0,70,50],
