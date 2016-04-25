@@ -1,9 +1,18 @@
 <html>
   <?php
                       
-    //$x = $x->getElementsB yTagName('course');
+    /*
+    getCourseFromXML
+    
+    Description:
+    This function opens an xml file and searches for a course based
+    on its prefix and number tags. It then returns the xml for
+    that course in an array with the xml tag names as the keys 
+    in the key value pairs.
+    */
     function getCourseFromXml( $file, $inPreFix, $inNumber)
     {
+      //Read file into document object model
       $xmlDoc = new DOMDocument();
       $xmlDoc->load($file);
       $x = $xmlDoc->documentElement;
@@ -17,7 +26,7 @@
                        "coReq" => Array(),
                        "notes" => "", );
       foreach ($x->childNodes AS $item) {
-
+        //Reset the array for next search
         $course = Array( "preFix" => "", 
                  "name" => "",
                  "number" => "",
@@ -26,10 +35,11 @@
                  "preReq" => Array(),
                  "coReq" => Array(),
                  "notes" => "", );
+        //only search course nodes
         if( $item->nodeName == 'course' )
         {
           foreach ($item->childNodes AS $member) 
-          {
+          { //extract all info out of the node
             if( $member->nodeName == 'preFix' )
             {
               $course['preFix'] = $member->nodeValue;
@@ -50,6 +60,7 @@
             {
               $course['description'] = $member->nodeValue;
             }
+            //THere are multiple pre and co-requizites possible so they are stored in a list
             else if( $member->nodeName == 'preReq' && $member->nodeValue != "" )
             {
               array_push($course['preReq'], $member->nodeValue);
@@ -63,6 +74,7 @@
               $course['notes'] = $member->nodeValue;
             }
           }
+          //if the preFix and course number are matched then we found the right one
           if( $course['preFix'] == $inPreFix && $course['number'] == $inNumber )
           {
             return $course;
@@ -71,14 +83,19 @@
           
         }
       }
+      //If none were found set the name and number for error update
       $course['name'] = "Course Not Found";
       $course['number'] = "400";
       return $course;
     }
 
+    /*
+    Description:
+    Prints out information about a course in formatted html
+    */
     function printCourse( $toPrint )
     {
-      //Print Course Name
+      //Print Course Name: CourseName - ( prefix, course number )
       print "<h2>" . 
             $toPrint['name'] . 
             " - ( " . $toPrint['preFix'] . " " . $toPrint['number'] . " )" . 
