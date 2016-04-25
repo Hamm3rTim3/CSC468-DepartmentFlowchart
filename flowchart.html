@@ -12,7 +12,7 @@
 <script src="scripts/popup.js"></script>
 
 </head>
-<body>
+<body onresize="onMapResize()" >
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
@@ -50,47 +50,47 @@
 </div>
 <div class="flowchartOuter">
 
-<img src="flowScale200.png" usemap="#flowchartmap" width="800" class="flowchart">
+<img src="flowScale200.png" usemap="#flowchartmap" width="800" class="flowchart" id="flowdiagram" onload="onMapResize()">
 
-	<map name="flowchartmap">
+	<map name="flowchartmap" id = "flowchartmap">
 	  <area shape="rect" coords="0,0,70,50" id="cssurvey" onclick="openPopup('CSC', 110);">
-	  <area shape="rect" coords="0,60,70,110" id="cs1" >
-	  <area shape="rect" coords="110,60,180,110" id="cs2">
-	  <area shape="rect" coords="0,250,70,300" id="calc1">
-	  <area shape="rect" coords="110,250,180,300" id="calc2">
-	  <area shape="rect" coords="210,250,280,300" id="calc3">
-	  <area shape="rect" coords="430,250,510,300" id="linear">
-	  <area shape="rect" coords="625,250,695,300" id="melect">
-	  <area shape="rect" coords="210,320,280,365" id="sci1">
+	  <area shape="rect" coords="0,60,70,110" id="cs1" onclick="openPopup('CSC', 150);">
+	  <area shape="rect" coords="110,60,180,110" id="cs2" onclick="openPopup('CSC', 250);" >
+	  <area shape="rect" coords="0,250,70,300" id="calc1" onclick="openPopup('CSC', 150);" >
+	  <area shape="rect" coords="110,250,180,300" id="calc2" onclick="openPopup('CSC', 150);" >
+	  <area shape="rect" coords="210,250,280,300" id="calc3" onclick="openPopup('CSC', 150);" >
+	  <area shape="rect" coords="430,250,510,300" id="linear" onclick="openPopup('CSC', 150);" >
+	  <area shape="rect" coords="625,250,695,300" id="melect" >
+	  <area shape="rect" coords="210,320,280,365" id="sci1" >
 	  <area shape="rect" coords="0,380,70,430" id="hum1">
 	  <area shape="rect" coords="110,380,180,430" id="hum2">
 	  <area shape="rect" coords="210,380,280,430" id="hum3">
 	  <area shape="rect" coords="340,380,410,430" id="hum4">
 	  <area shape="rect" coords="725,380,795,430" id="hum5">
-	  <area shape="rect" coords="103,150,182,200" id="finite">
-	  <area shape="rect" coords="205,150,280,200" id="datastructures">
-	  <area shape="rect" coords="430,60,505,110" id="pl">
+	  <area shape="rect" coords="103,150,182,200" id="finite" onclick="openPopup('CSC', 251);" >
+	  <area shape="rect" coords="205,150,280,200" id="datastructures" onclick="openPopup('CSC', 300);" >
+	  <area shape="rect" coords="430,60,505,110" id="pl" onclick="openPopup('CSC', 461);" >
 	  <area shape="rect" coords="0,450,70,500" id="eng101">
 	  <area shape="rect" coords="340,450,410,500" id="tech1">
 	  <area shape="rect" coords="440,450,515,500" id="tech2">
 	  <area shape="rect" coords="625,450,695,500" id="felec1">
 	  <area shape="rect" coords="725,450,795,500" id="felec2">
-	  <area shape="rect" coords="340,0,410,50" id="assembly">
-	  <area shape="rect" coords="340,60,410,110" id="softEng">
+	  <area shape="rect" coords="340,0,410,50" id="assembly" onclick="openPopup('CSC', 314);" >
+	  <area shape="rect" coords="340,60,410,110" id="softEng" onclick="openPopup('CSC', 470);" >
 	  <area shape="rect" coords="340,320,410,365" id="phys1">
-	  <area shape="rect" coords="430,115,505,165" id="alg">
+	  <area shape="rect" coords="430,115,505,165" id="alg" onclick="openPopup('CSC', 372);" >
 	  <area shape="rect" coords="430,180,505,230" id="elec1">
 	  <area shape="rect" coords="530,180,600,230" id="elec2">
 	  <area shape="rect" coords="625,180,695,230" id="elec3">
 	  <area shape="rect" coords="725,180,795,230" id="elec4">
-	  <area shape="rect" coords="530,60,600,110" id="gui">
-	  <area shape="rect" coords="530,115,600,165" id="database">
+	  <area shape="rect" coords="530,60,600,110" id="gui" onclick="openPopup('CSC', 468);" >
+	  <area shape="rect" coords="530,115,600,165" id="database" onclick="openPopup('CSC', 484);" >
 	  <area shape="rect" coords="530,250,600,300" id="prob1">
 	  <area shape="rect" coords="530,320,600,365" id="sci2">
-	  <area shape="rect" coords="625,0,695,50" id="coa">
-	  <area shape="rect" coords="620,60,695,115" id="sd1">
-	  <area shape="rect" coords="725,0,795,50" id="os">
-	  <area shape="rect" coords="720,60,800,115" id="sd2">
+	  <area shape="rect" coords="625,0,695,50" id="coa" onclick="openPopup('CSC', 317);" >
+	  <area shape="rect" coords="620,60,695,115" id="sd1" onclick="openPopup('CSC', 464);" >
+	  <area shape="rect" coords="725,0,795,50" id="os" onclick="openPopup('CSC', 456);" >
+	  <area shape="rect" coords="720,60,800,115" id="sd2" onclick="openPopup('CSC', 465);" >
 	</map>
 </div>
 <script>
