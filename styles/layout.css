@@ -19,6 +19,7 @@ Template below was modified:
 
 html{overflow-y:scroll;}
 
+/* CSS layout for body parts of pages. */
 body{margin:0; padding:0; font-size:100%; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#232323;}
 
 .justify{text-align:justify;}
@@ -41,17 +42,18 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
 
-/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+/*--------------------HTML 5 Overrides-------------------------------------*/
 
 address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
 
-/*----------------------------------------------Responsive Videos-------------------------------------*/
+/*------------------Responsive Videos-------------------------------------*/
 
 .video{display:block; position:relative; width:100%; height:0; margin:0; padding:0 0 56.25% 0; /* using a 16:9 aspect ratio, the height is 56.25% of the width (9/16=0.5625) */}
 .video iframe{display:block; position:absolute; width:100%; height:100%; margin:0; padding:0;}
 
-/* ----------------------------------------------Wrapper-------------------------------------*/
-
+/* --------------------------Wrapper-------------------------------------*/
+/* CSS layout for wrapper parts of pages, most visible elements are in */
+/* wrappers */
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .row1, .row1 a{color:white; background-color:#071D49;}
@@ -73,7 +75,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 	padding:10px 50px 10px 50px;
 }
 
-/*----------------------------------------------Generalise-------------------------------------*/
+/*----------------------Generalise-------------------------------------*/
 
 h1, h2, h3, h4, h5, h6{margin:0 0 8px 0; padding:0; font-size:1.6em; font-weight:normal; line-height:normal;}
 
@@ -85,7 +87,7 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
 
 #header, #topnav, #container, #footer, #copyright{margin:0 auto; font-size:.8em;}
 
-/*----------------------------------------------Header-------------------------------------*/
+/*---------------------------Header-------------------------------------*/
 
 #header{padding:20px 0;}
 
@@ -94,11 +96,11 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
 #header #hgroup h1{font-size:2.5em;}
 #header #hgroup h2{font-size:1em;}
 
-/*----------------------------------------------Content Area-------------------------------------*/
+/*-------------------------Content Area-------------------------------------*/
 
 #container{padding:30px 0; clear:both;}
 
-/*----------------------------------------------Footer-------------------------------------*/
+/*--------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0;}
 #footer p{margin:0; padding:0;}
